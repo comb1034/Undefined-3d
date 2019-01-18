@@ -60,12 +60,12 @@ namespace irr
 #endif
 
 #ifdef _IRR_COMPILE_WITH_OGLES1_
-		// FIXME: ¾ÆÁ÷ Áö¿ø¾ÈÇÔ.
+		// FIXME: ë‚˜ì¤‘ì— êµ¬í˜„ ë˜ì–´ ìˆëŠ”ê±° ê°€ì ¸ì™€ì•¼ í•¨
         IVideoDriver* createOGLES1Driver(const irr::SIrrlichtCreationParameters& params, io::IFileSystem* io, IContextManager* contextManager);
 #endif
 
 #ifdef _IRR_COMPILE_WITH_OGLES2_
-		// FIXME: ¾ÆÁ÷ Áö¿ø¾ÈÇÔ.
+		// FIXME: ë‚˜ì¤‘ì— êµ¬í˜„ ë˜ì–´ ìˆëŠ”ê±° ê°€ì ¸ì™€ì•¼ í•¨
         IVideoDriver* createOGLES2Driver(const irr::SIrrlichtCreationParameters& params, io::IFileSystem* io, IContextManager* contextManager);
 #endif
 	}

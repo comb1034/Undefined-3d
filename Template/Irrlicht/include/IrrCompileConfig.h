@@ -228,7 +228,7 @@ define out. */
 //! Define _IRR_COMPILE_WITH_OGLES1_ to compile the Irrlicht engine with OpenGL ES 1.1.
 /** If you do not wish the engine to be compiled with OpenGL ES 1.1, comment this
 define out. */
-// FIXME: ÄÚµå ¾÷µ¥ÀÌÆ® È®ÀÎÇÏ¿© Áö¿øÇÏµµ·Ï º¯°æ.
+// FIXME: ë‚˜ì¤‘ì— ì½”ë“œ ì—…ë°ì´íŠ¸ í•´ì•¼ í•¨
 #ifndef _IRR_COMPILE_WITH_WINDOWS_DEVICE_
 #define _IRR_COMPILE_WITH_OGLES1_
 #endif // _IRR_COMPILE_WITH_WINDOWS_DEVICE_
@@ -253,7 +253,7 @@ define out. */
 //! Define _IRR_COMPILE_WITH_OGLES2_ to compile the Irrlicht engine with OpenGL ES 2.0.
 /** If you do not wish the engine to be compiled with OpenGL ES 2.0, comment this
 define out. */
-// FIXME: ÄÚµå ¾÷µ¥ÀÌÆ® È®ÀÎÇÏ¿© Áö¿øÇÏµµ·Ï º¯°æ.
+// FIXME: ë‚˜ì¤‘ì— ì½”ë“œ ì—…ë°ì´íŠ¸ í•´ì•¼ í•¨
 #ifndef _IRR_COMPILE_WITH_WINDOWS_DEVICE_
 #define _IRR_COMPILE_WITH_OGLES2_
 #endif // _IRR_COMPILE_WITH_WINDOWS_DEVICE_
