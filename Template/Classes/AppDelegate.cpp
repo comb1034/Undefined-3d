@@ -1,10 +1,6 @@
 #include "AppDelegate.h"
 
-#ifdef _WIN32
-const dimension2d<u32> AppDelegate::SCREEN_SIZE = dimension2d<u32>(640, 480);
-#else
-const dimension2d<u32> AppDelegate::SCREEN_SIZE = dimension2d<u32>(720, 1280);
-#endif // _WIN32
+dimension2d<u32> SCREEN_SIZE = dimension2d<u32>(360, 640);
 
 AppDelegate::AppDelegate()
 {

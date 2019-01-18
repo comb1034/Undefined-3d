@@ -39,16 +39,22 @@ void HelloWorldScene::Initialize(IrrlichtDevice * device)
 	other supported file format. By the way, that cool Quake 2 model
 	called sydney was modeled by Brian Collins.
 	*/
-	//IAnimatedMesh* mesh = smgr->getMesh(mediaPath + "sydney.md2");
-	//if (!mesh)
-	//{
-	//	device->drop();
-	//	return 1;
-	//}
-	//IAnimatedMeshSceneNode* node = smgr->addAnimatedMeshSceneNode(mesh);
+	IAnimatedMesh* mesh = smgr->getMesh(mediaPath + "sydney.md2");
+	if (!mesh)
+	{
+		device->drop();
+		return;
+	}
+	IAnimatedMeshSceneNode* node = smgr->addAnimatedMeshSceneNode(mesh);
+
+	if (node)
+	{
+		node->setMaterialFlag(EMF_LIGHTING, false);
+		node->setMD2Animation(scene::EMAT_STAND);
+		node->setMaterialTexture(0, driver->getTexture(mediaPath + "sydney.bmp"));
+	}
 	
 	smgr->addCameraSceneNode(0, vector3df(0, 30, -40), vector3df(0, 5, 0));
-
 
 	return;
 }

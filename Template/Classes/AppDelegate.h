@@ -26,8 +26,6 @@ public:
 	AppDelegate();
 	~AppDelegate();
 
-	static const dimension2d<u32> SCREEN_SIZE;
-
 #ifdef _IRR_ANDROID_PLATFORM_
 	int Run(android_app* app);
 #else
