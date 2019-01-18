@@ -1,0 +1,16 @@
+# Prerequisites
+*.d
+
+# Compiled Object files
+*.slo
+*.lo
+*.o
+*.obj
+
+# Executables
+*.exe
+*.out
+*.app
+/Template/Irrlicht/obj
+/Template/proj.Win32/.vs
+/Template/proj.Win32/Debug
