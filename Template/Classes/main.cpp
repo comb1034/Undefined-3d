@@ -1,12 +1,12 @@
 
 #include <android_native_app_glue.h>
 
-//#include "AppDelegate.h"
+#include "AppDelegate.h"
 
 void android_main(android_app* androidApp)
 {
-    //AppDelegate app;
-    //app.Run();
+    AppDelegate app;
+    app.Run();
 }
 
 

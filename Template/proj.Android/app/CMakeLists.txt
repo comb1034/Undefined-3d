@@ -19,7 +19,7 @@ include_directories(../../Irrlicht/jpeglib/)
 include_directories(../../Irrlicht/libpng/)
 include_directories(../../Irrlicht/zlib/)
 
-#include_directories(../../Classes/)
+include_directories(../../Classes/)
 
 add_library( # Sets the name of the library.
              app-glue
@@ -358,7 +358,7 @@ add_library(irr STATIC
         ../../Irrlicht/zlib/inftrees.c
         ../../Irrlicht/zlib/uncompr.c)
 
-file(GLOB CLASSES_PATH "../../Classes/*.cpp" "../../Classes/*.h")
+file(GLOB CLASSES_PATH "../../Classes/*.cpp")
         #"src/main/cpp/*.cpp")
 
 add_library(native-lib SHARED ${CLASSES_PATH})
