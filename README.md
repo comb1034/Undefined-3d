@@ -7,3 +7,4 @@ Undefined Engine Name...
 - 일리히트 엔진 기반.
 - 코코스2d 스타일의 프로젝트 구성.
 - IOS 지원 예정.
+- NDK r15c 에서 빌드 테스트 됨
