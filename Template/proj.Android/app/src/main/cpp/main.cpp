@@ -3,12 +3,15 @@
 
 #include "AppDelegate.h"
 
+#ifdef _IRR_ANDROID_PLATFORM_
+
 void android_main(android_app* androidApp)
 {
     AppDelegate app;
-    app.Run();
+    app.Run(androidApp);
 }
 
+#endif
 
 //using namespace irr;
 //using namespace core;

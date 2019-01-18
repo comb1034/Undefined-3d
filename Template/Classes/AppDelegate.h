@@ -3,7 +3,14 @@
 
 #include <irrlicht.h>
 
-#include "exampleHelper.h"
+
+#include "HelloWorldScene.h"
+
+#ifdef _IRR_ANDROID_PLATFORM_
+#include "android_native_app_glue.h"
+#include "android_tools.h"
+#endif // _IRR_ANDROID_PLATFORM
+
 
 using namespace irr;
 
@@ -21,7 +28,11 @@ public:
 
 	static const dimension2d<u32> SCREEN_SIZE;
 
+#ifdef _IRR_ANDROID_PLATFORM_
+	int Run(android_app* app);
+#else
 	int Run();
+#endif
 
 private:
 
